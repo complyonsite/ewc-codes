@@ -1,6 +1,6 @@
 {
   "name": "complyonsite-ewc-codes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "All 842 UK List of Waste (EWC) codes, WM3 entry types and mirror partners. Zero runtime dependencies.",
   "type": "module",
   "main": "./dist/index.js",
@@ -13,7 +13,7 @@
   "sideEffects": false,
   "license": "MIT AND OGL-UK-3.0",
   "author": "ComplyOnSite",
-  "homepage": "https://github.com/complyonsite/ewc-codes#readme",
+  "homepage": "https://complyonsite.com/tools/ewc-code-finder",
   "repository": { "type": "git", "url": "git+https://github.com/complyonsite/ewc-codes.git" },
   "bugs": { "url": "https://github.com/complyonsite/ewc-codes/issues" },
   "keywords": ["ewc", "list-of-waste", "waste", "hazardous-waste", "wm3", "complyonsite"],
