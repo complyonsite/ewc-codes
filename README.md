@@ -14,12 +14,7 @@ Package name: `complyonsite-ewc-codes`, version `1.0.0`.
 The npm release is pending maintainer authentication; until it is published:
 
 ```sh
-git clone https://github.com/complyonsite/ewc-codes.git
-cd ewc-codes
-npm ci
-npm pack
-# From your application:
-npm install /path/to/ewc-codes/complyonsite-ewc-codes-1.0.0.tgz
+npm install https://github.com/complyonsite/ewc-codes/releases/download/v1.0.0/complyonsite-ewc-codes-1.0.0.tgz
 ```
 
 After npm publication:
