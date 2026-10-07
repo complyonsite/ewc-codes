@@ -1,0 +1,29 @@
+{
+  "name": "complyonsite-ewc-codes",
+  "version": "1.0.0",
+  "description": "All 842 UK List of Waste (EWC) codes, WM3 entry types and mirror partners. Zero runtime dependencies.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js", "default": "./dist/index.js" },
+    "./ewc-codes.json": "./ewc-codes.json"
+  },
+  "files": ["dist", "ewc-codes.json", "ewc_codes.py", "LICENSE", "DATA-LICENSE.md", "SOURCES.md"],
+  "sideEffects": false,
+  "license": "MIT AND OGL-UK-3.0",
+  "author": "ComplyOnSite",
+  "homepage": "https://github.com/complyonsite/ewc-codes#readme",
+  "repository": { "type": "git", "url": "git+https://github.com/complyonsite/ewc-codes.git" },
+  "bugs": { "url": "https://github.com/complyonsite/ewc-codes/issues" },
+  "keywords": ["ewc", "list-of-waste", "waste", "hazardous-waste", "wm3", "complyonsite"],
+  "scripts": {
+    "build": "node scripts/build.mjs && tsc",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "test:site": "npm run build && node --test test/site-parity.mjs",
+    "test:python": "python3 -m unittest discover -s test -p '*_test.py'",
+    "prepack": "npm test && npm run test:python",
+    "export:site": "node scripts/export-site.mjs"
+  },
+  "devDependencies": { "typescript": "5.9.3" }
+}
